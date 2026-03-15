@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Metadata - English -->
+    <title>Electrician_life - Professional Electrical Services in NYC</title>
+    <meta name="description" content="Professional electrician services in NYC. Residential, commercial and industrial electrical installations, repairs, maintenance, LED lighting, EV chargers, solar panels and more. 20+ years experience.">
+    <meta name="keywords" content="electrician NYC, electrical services, electrician New York, electrical installation, electrical repair, LED lighting, EV charger, solar panels, electrical maintenance">
+    <meta name="author" content="Christian Herencia">
+    <meta name="robots" content="index, follow">
+    
+    <!-- SEO Metadata - Spanish -->
+    <meta name="description" lang="es" content="Servicios eléctricos profesionales en NYC. Instalaciones eléctricas residenciales, comerciales e industriales, reparaciones, mantenimiento, iluminación LED, cargadores EV, paneles solares y más. Más de 20 años de experiencia.">
+    <meta name="keywords" lang="es" content="electricista NYC, servicios eléctricos, electricista Nueva York, instalación eléctrica, reparación eléctrica, iluminación LED, cargador EV, paneles solares, mantenimiento eléctrico">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Electrician_life - Professional Electrical Services NYC">
+    <meta property="og:description" content="Expert electrical services in New York City. Residential, commercial and industrial solutions.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="es_ES">
+    
+    <!-- Canonical -->
+    <link rel="canonical" href="https://christian-freelance.us/electricista-usa/">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#inicio" class="logo">
+                <img src="images/logotipo.jpg" alt="Electrician_life Logo" class="logo-img">
+                <span class="logo-text">Electrician_life</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#inicio" class="nav-link" data-en="Home" data-es="Inicio">Home</a></li>
+                <li><a href="#somos" class="nav-link" data-en="About Us" data-es="Nosotros">About Us</a></li>
+                <li><a href="#servicios" class="nav-link" data-en="Services" data-es="Servicios">Services</a></li>
+                <li><a href="#portafolio" class="nav-link" data-en="Portfolio" data-es="Portafolio">Portfolio</a></li>
+                <li><a href="#contacto" class="nav-link" data-en="Contact" data-es="Contacto">Contact</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <!-- Language Toggle -->
+                <button class="lang-toggle" id="lang-toggle" aria-label="Toggle Language">
+                    <span class="lang-option active" data-lang="en">EN</span>
+                    <span class="lang-divider">|</span>
+                    <span class="lang-option" data-lang="es">ES</span>
+                </button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section id="inicio" class="hero">
+        <div class="carousel" id="carousel">
+            <div class="carousel-track" id="carousel-track">
+                <div class="carousel-slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/358196108_227508153525386_4775757507342864728_n.jpg')"></div>
+                <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/358559366_3545585085725188_331591545843055161_n.jpg')"></div>
+                <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/358797930_1249896508998935_7762913784775606429_n.jpg')"></div>
+                <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/359544667_672594811577629_2629174000260120119_n.jpg')"></div>
+                <div class="carousel-slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/360035371_217554250841825_9197064087325191576_n.jpg')"></div>
+            </div>
+            
+            <button class="carousel-btn prev" id="carousel-prev" aria-label="Previous">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="carousel-btn next" id="carousel-next" aria-label="Next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title fade-in" data-en="Professional Electrical Services in NYC" data-es="Servicios Eléctricos Profesionales en NYC">
+                Professional Electrical Services in NYC
+            </h1>
+            <p class="hero-subtitle fade-in-delay" data-en="20+ Years of Experience | Certified Professionals | 24/7 Emergency Service" data-es="Más de 20 Años de Experiencia | Profesionales Certificados | Servicio de Emergencia 24/7">
+                20+ Years of Experience | Certified Professionals | 24/7 Emergency Service
+            </p>
+            <div class="hero-buttons fade-in-delay-2">
+                <a href="#servicios" class="btn btn-primary" data-en="Our Services" data-es="Nuestros Servicios">Our Services</a>
+                <a href="#contacto" class="btn btn-secondary" data-en="Contact Us" data-es="Contáctanos">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="somos" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <h2 class="section-title" data-en="About Electrician_life" data-es="Sobre Electrician_life">
+                        About Electrician_life
+                    </h2>
+                    <p class="about-text" data-en="We are a professional electrical company based in New York City with over 20 years of experience in the industry. Our team of certified electricians is committed to providing high-quality electrical services to residential, commercial, and industrial clients." data-es="Somos una empresa eléctrica profesional con sede en la ciudad de Nueva York con más de 20 años de experiencia en la industria. Nuestro equipo de electricistas certificados está comprometido a proporcionar servicios eléctricos de alta calidad a clientes residenciales, comerciales e industriales.">
+                        We are a professional electrical company based in New York City with over 20 years of experience in the industry. Our team of certified electricians is committed to providing high-quality electrical services to residential, commercial, and industrial clients.
+                    </p>
+                    <p class="about-text" data-en="At Electrician_life, we pride ourselves on delivering exceptional workmanship, using the latest technology and industry best practices. Our certified professionals are trained to handle projects of all sizes, from simple repairs to complex installations." data-es="En Electrician_life, nos enorgullece ofrecer una mano de obra excepcional, utilizando la última tecnología y las mejores prácticas de la industria. Nuestros profesionales certificados están capacitados para manejar proyectos de todos los tamaños, desde reparaciones simples hasta instalaciones complejas.">
+                        At Electrician_life, we pride ourselves on delivering exceptional workmanship, using the latest technology and industry best practices. Our certified professionals are trained to handle projects of all sizes, from simple repairs to complex installations.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-certificate"></i>
+                            <span data-en="Certified Professionals" data-es="Profesionales Certificados">Certified Professionals</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-clock"></i>
+                            <span data-en="20+ Years Experience" data-es="Más de 20 Años de Experiencia">20+ Years Experience</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <span data-en="Licensed & Insured" data-es="Licenciados y Asegurados">Licensed & Insured</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-star"></i>
+                            <span data-en="5-Star Service" data-es="Servicio 5 Estrellas">5-Star Service</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-video">
+                    <div class="video-container">
+                        <video controls poster="images/366477194_840243267224456_6229723839287131555_n.jpg">
+                            <source src="images/Separando cables- cableando una casa en Usa. #Unelectricista #enusa.mp4" type="video/mp4">
+                            <span data-en="Your browser does not support the video tag." data-es="Su navegador no soporta la etiqueta de video.">Your browser does not support the video tag.</span>
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <h2 class="section-title text-center" data-en="Our Services" data-es="Nuestros Servicios">
+                Our Services
+            </h2>
+            <p class="section-subtitle text-center" data-en="Comprehensive electrical solutions for homes, businesses, and industries" data-es="Soluciones eléctricas integrales para hogares, empresas e industrias">
+                Comprehensive electrical solutions for homes, businesses, and industries
+            </p>
+            
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3 data-en="Residential Electrical Installations" data-es="Instalaciones Eléctricas Residenciales">Residential Electrical Installations</h3>
+                    <p data-en="Complete electrical system installation for new homes or renovations. Includes wiring, outlets, switches, electrical panels, and grid connection." data-es="Instalación completa del sistema eléctrico en viviendas nuevas o reformas. Incluye cableado, enchufes, interruptores, cuadros eléctricos y conexión a la red.">Complete electrical system installation for new homes or renovations. Includes wiring, outlets, switches, electrical panels, and grid connection.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 data-en="Electrical Repairs" data-es="Reparación de Averías Eléctricas">Electrical Repairs</h3>
+                    <p data-en="Diagnosis and solution of problems like short circuits, blackouts, non-working outlets, tripping differentials, or wiring failures." data-es="Diagnóstico y solución de problemas como cortocircuitos, apagones, enchufes que no funcionan, diferenciales que saltan o fallos en el cableado.">Diagnosis and solution of problems like short circuits, blackouts, non-working outlets, tripping differentials, or wiring failures.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3 data-en="Preventive Maintenance" data-es="Mantenimiento Eléctrico Preventivo">Preventive Maintenance</h3>
+                    <p data-en="Periodic inspection of installations to prevent failures or electrical fires. Includes checking connections, loads, and wire condition." data-es="Revisión periódica de instalaciones para evitar fallos o incendios eléctricos. Incluye comprobación de conexiones, cargas y estado de cables.">Periodic inspection of installations to prevent failures or electrical fires. Includes checking connections, loads, and wire condition.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3 data-en="Electrical Panel Installation" data-es="Instalación de Cuadros Eléctricos">Electrical Panel Installation</h3>
+                    <p data-en="Installation or renovation of electrical panels with circuit breakers, differentials, and overload protection." data-es="Montaje o renovación del cuadro eléctrico (panel de distribución) con automáticos, diferenciales y protección contra sobrecargas.">Installation or renovation of electrical panels with circuit breakers, differentials, and overload protection.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 data-en="Interior Lighting" data-es="Iluminación Interior">Interior Lighting</h3>
+                    <p data-en="Design and installation of lamps, LED lights, decorative lighting, recessed lighting, and low-consumption systems." data-es="Diseño e instalación de lámparas, focos LED, iluminación decorativa, iluminación empotrada y sistemas de bajo consumo.">Design and installation of lamps, LED lights, decorative lighting, recessed lighting, and low-consumption systems.</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tree"></i>
+                    </div>
+                    <h3 data-en="Exterior Lighting" data-es="Iluminación Exterior y Jardines">Exterior Lighting</h3>
+                    <p data-en="Installation of lights for patios, gardens, facades, terraces, or parking lots, including motion sensor systems." data-es="Instalación de luces para patios, jardines, fachadas, terrazas o estacionamientos, incluyendo sistemas con sensores de movimiento.">Installation of lights for patios, gardens, facades, terraces, or parking lots, including motion sensor systems.</p>
+                </div>
+                
+                <!-- Service 7 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 data-en="Home Automation" data-es="Automatización y Domótica">Home Automation</h3>
+                    <p data-en="Installation of smart systems to control lights, outlets, climate, or blinds from mobile devices or voice assistants." data-es="Instalación de sistemas inteligentes para controlar luces, enchufes, climatización o persianas desde el móvil o asistentes de voz.">Installation of smart systems to control lights, outlets, climate, or blinds from mobile devices or voice assistants.</p>
+                </div>
+                
+                <!-- Service 8 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-car-battery"></i>
+                    </div>
+                    <h3 data-en="EV Charger Installation" data-es="Instalación de Cargadores para Coches Eléctricos">EV Charger Installation</h3>
+                    <p data-en="Installation of charging points in homes, garages, or businesses for electric vehicles." data-es="Montaje de puntos de carga en viviendas, garajes o empresas para vehículos eléctricos.">Installation of charging points in homes, garages, or businesses for electric vehicles.</p>
+                </div>
+                
+                <!-- Service 9 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 data-en="Security Systems" data-es="Instalación de Sistemas de Seguridad">Security Systems</h3>
+                    <p data-en="Electrical connection for surveillance cameras, alarms, motion sensors, and access control systems." data-es="Conexión eléctrica para cámaras de vigilancia, alarmas, sensores de movimiento y sistemas de control de acceso.">Electrical connection for surveillance cameras, alarms, motion sensors, and access control systems.</p>
+                </div>
+                
+                <!-- Service 10 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-doorbell"></i>
+                    </div>
+                    <h3 data-en="Doorbells & Video Intercoms" data-es="Instalación de Timbres y Videoporteros">Doorbells & Video Intercoms</h3>
+                    <p data-en="Installation of electric doorbells, automatic intercoms, or video intercoms in homes and buildings." data-es="Colocación de timbres eléctricos, porteros automáticos o videoporteros en casas y edificios.">Installation of electric doorbells, automatic intercoms, or video intercoms in homes and buildings.</p>
+                </div>
+                
+                <!-- Service 11 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fan"></i>
+                    </div>
+                    <h3 data-en="Ceiling Fans" data-es="Instalación de Ventiladores de Techo">Ceiling Fans</h3>
+                    <p data-en="Mounting and safe electrical connection of ceiling fans with or without lighting." data-es="Montaje y conexión eléctrica segura de ventiladores con o sin iluminación.">Mounting and safe electrical connection of ceiling fans with or without lighting.</p>
+                </div>
+                
+                <!-- Service 12 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-signature"></i>
+                    </div>
+                    <h3 data-en="Electrical Certificates" data-es="Certificados Eléctricos">Electrical Certificates</h3>
+                    <p data-en="Inspection of installations and issuance of certificates required to contract electricity or sell/rent a property." data-es="Inspección de instalaciones y emisión de certificados necesarios para contratar electricidad o vender/alquilar una propiedad.">Inspection of installations and issuance of certificates required to contract electricity or sell/rent a property.</p>
+                </div>
+                
+                <!-- Service 13 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-plug"></i>
+                    </div>
+                    <h3 data-en="Additional Outlets" data-es="Tomas y Enchufes Adicionales">Additional Outlets</h3>
+                    <p data-en="Expansion of electrical points in homes or businesses for greater comfort or new needs." data-es="Ampliación de puntos eléctricos en viviendas o negocios para mayor comodidad o nuevas necesidades.">Expansion of electrical points in homes or businesses for greater comfort or new needs.</p>
+                </div>
+                
+                <!-- Service 14 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-solar-panel"></i>
+                    </div>
+                    <h3 data-en="Solar Energy Systems" data-es="Instalación de Sistemas de Energía Solar">Solar Energy Systems</h3>
+                    <p data-en="Electrical connection of solar panels, inverters, and batteries for self-consumption." data-es="Conexión eléctrica de paneles solares, inversores y baterías para autoconsumo.">Electrical connection of solar panels, inverters, and batteries for self-consumption.</p>
+                </div>
+                
+                <!-- Service 15 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3 data-en="Commercial Installations" data-es="Instalaciones Eléctricas Comerciales">Commercial Installations</h3>
+                    <p data-en="Electrical design and installation in stores, restaurants, offices, or shops complying with safety regulations." data-es="Diseño e instalación eléctrica en locales, restaurantes, oficinas o tiendas cumpliendo normativas de seguridad.">Electrical design and installation in stores, restaurants, offices, or shops complying with safety regulations.</p>
+                </div>
+                
+                <!-- Service 16 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 data-en="Generator Installation" data-es="Instalación de Generadores Eléctricos">Generator Installation</h3>
+                    <p data-en="Connection of backup generators for homes or businesses in case of power outages." data-es="Conexión de generadores de respaldo para casas o negocios en caso de cortes de energía.">Connection of backup generators for homes or businesses in case of power outages.</p>
+                </div>
+                
+                <!-- Service 17 -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <h3 data-en="LED Efficient Lighting" data-es="Iluminación LED Eficiente">LED Efficient Lighting</h3>
+                    <p data-en="Replacement of old systems with LED lighting to save energy and reduce electricity costs." data-es="Cambio de sistemas antiguos por iluminación LED para ahorrar energía y reducir costes eléctricos.">Replacement of old systems with LED lighting to save energy and reduce electricity costs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portafolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title text-center" data-en="Our Portfolio" data-es="Nuestro Portafolio">
+                Our Portfolio
+            </h2>
+            <p class="section-subtitle text-center" data-en="See our latest projects and completed work" data-es="Vea nuestros últimos proyectos y trabajos completados">
+                See our latest projects and completed work
+            </p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="images/366477194_840243267224456_6229723839287131555_n.jpg" alt="Electrical work project 1">
+                    <div class="portfolio-overlay">
+                        <h4 data-en="Residential Installation" data-es="Instalación Residencial">Residential Installation</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/618354404_17937180419999452_1254849257635080967_n.jpg" alt="Electrical work project 2">
+                    <div class="portfolio-overlay">
+                        <h4 data-en="Commercial Lighting" data-es="Iluminación Comercial">Commercial Lighting</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/620933834_18071603729612467_4453685973734975040_n.jpg" alt="Electrical work project 3">
+                    <div class="portfolio-overlay">
+                        <h4 data-en="Panel Upgrade" data-es="Actualización de Panel">Panel Upgrade</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/623515065_18076497305356147_3261409070216701307_n.jpg" alt="Electrical work project 4">
+                    <div class="portfolio-overlay">
+                        <h4 data-en="LED Installation" data-es="Instalación LED">LED Installation</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/623928393_18080740688002648_1074297548564623492_n.jpg" alt="Electrical work project 5">
+                    <div class="portfolio-overlay">
+                        <h4 data-en="Wiring Project" data-es="Proyecto de Cableado">Wiring Project</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/624746155_18077622902339645_2752867951314434606_n.jpg" alt="Electrical work project 6">
+                    <div class="portfolio-overlay">
+                        <h4 data-en="Security System" data-es="Sistema de Seguridad">Security System</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/624915858_18011041874667165_1126755027436923022_n.jpg" alt="Electrical work project 7">
+                    <div class="portfolio-overlay">
+                        <h4 data-en="Solar Installation" data-es="Instalación Solar">Solar Installation</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/624942851_18064179722644823_7116652142846242189_n.jpg" alt="Electrical work project 8">
+                    <div class="portfolio-overlay">
+                        <h4 data-en="EV Charger" data-es="Cargador EV">EV Charger</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/627184944_18341842828242574_4157320756920345468_n.jpg" alt="Electrical work project 9">
+                    <div class="portfolio-overlay">
+                        <h4 data-en="Home Automation" data-es="Domótica">Home Automation</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/627439173_18172652692346092_8256714353513364870_n.jpg" alt="Electrical work project 10">
+                    <div class="portfolio-overlay">
+                        <h4 data-en="Exterior Lighting" data-es="Iluminación Exterior">Exterior Lighting</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/642205895_18569317234034315_8607343874532003558_n.jpg" alt="Electrical work project 11">
+                    <div class="portfolio-overlay">
+                        <h4 data-en="Industrial Work" data-es="Trabajo Industrial">Industrial Work</h4>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/649191375_17985343940795555_3669883105856905861_n.jpg" alt="Electrical work project 12">
+                    <div class="portfolio-overlay">
+                        <h4 data-en="Generator Setup" data-es="Configuración de Generador">Generator Setup</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Posts Section -->
+    <section class="blog">
+        <div class="container">
+            <h2 class="section-title text-center" data-en="Latest News & Tips" data-es="Últimas Noticias y Consejos">
+                Latest News & Tips
+            </h2>
+            <p class="section-subtitle text-center" data-en="Expert advice and industry updates" data-es="Consejos de expertos y actualizaciones de la industria">
+                Expert advice and industry updates
+            </p>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/652727743_17985814037794420_7036233799146435470_n.jpg" alt="Blog post 1">
+                    </div>
+                    <div class="blog-content">
+                        <h3 data-en="5 Signs You Need an Electrical Upgrade" data-es="5 Señales de que Necesita una Actualización Eléctrica">5 Signs You Need an Electrical Upgrade</h3>
+                        <p data-en="Frequent breaker trips, flickering lights, and outdated outlets are warning signs that your electrical system needs attention. Learn when it's time to call a professional." data-es="Disyuntores que saltan frecuentemente, luces parpadeantes y enchufes desactualizados son señales de advertencia de que su sistema eléctrico necesita atención. Aprenda cuándo es hora de llamar a un profesional.">Frequent breaker trips, flickering lights, and outdated outlets are warning signs that your electrical system needs attention. Learn when it's time to call a professional.</p>
+                        <a href="#contacto" class="read-more" data-en="Learn More" data-es="Leer Más">Learn More →</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/358196108_227508153525386_4775757507342864728_n.jpg" alt="Blog post 2">
+                    </div>
+                    <div class="blog-content">
+                        <h3 data-en="Benefits of LED Lighting for Your Home" data-es="Beneficios de la Iluminación LED para su Hogar">Benefits of LED Lighting for Your Home</h3>
+                        <p data-en="LED lighting can save up to 80% on energy costs compared to traditional bulbs. Discover why switching to LED is a smart investment for your home." data-es="La iluminación LED puede ahorrar hasta un 80% en costos de energía en comparación con las bombillas tradicionales. Descubra por qué cambiar a LED es una inversión inteligente para su hogar.">LED lighting can save up to 80% on energy costs compared to traditional bulbs. Discover why switching to LED is a smart investment for your home.</p>
+                        <a href="#contacto" class="read-more" data-en="Learn More" data-es="Leer Más">Learn More →</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="images/358559366_3545585085725188_331591545843055161_n.jpg" alt="Blog post 3">
+                    </div>
+                    <div class="blog-content">
+                        <h3 data-en="EV Charger Installation: What You Need to Know" data-es="Instalación de Cargador EV: Lo que Necesita Saber">EV Charger Installation: What You Need to Know</h3>
+                        <p data-en="Thinking about installing an EV charger at home? Learn about the different charging levels, electrical requirements, and potential costs." data-es="¿Pensando en instalar un cargador EV en casa? Aprenda sobre los diferentes niveles de carga, requisitos eléctricos y costos potenciales.">Thinking about installing an EV charger at home? Learn about the different charging levels, electrical requirements, and potential costs.</p>
+                        <a href="#contacto" class="read-more" data-en="Learn More" data-es="Leer Más">Learn More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title text-center" data-en="Contact Us" data-es="Contáctenos">
+                Contact Us
+            </h2>
+            <p class="section-subtitle text-center" data-en="Get in touch for a free consultation or emergency service" data-es="Contáctenos para una consulta gratuita o servicio de emergencia">
+                Get in touch for a free consultation or emergency service
+            </p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4 data-en="Location" data-es="Ubicación">Location</h4>
+                            <p data-en="New York City, NY" data-es="Nueva York, NY">New York City, NY</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4 data-en="Phone" data-es="Teléfono">Phone</h4>
+                            <p>+1 (212) 555-0123</p>
+                            <p>+1 (917) 555-0456</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4 data-en="Email" data-es="Correo Electrónico">Email</h4>
+                            <p>constructiontees444@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4 data-en="Business Hours" data-es="Horario de Atención">Business Hours</h4>
+                            <p data-en="Monday - Friday: 8:00 AM - 6:00 PM" data-es="Lunes - Viernes: 8:00 AM - 6:00 PM">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                            <p data-en="Saturday: 9:00 AM - 3:00 PM" data-es="Sábado: 9:00 AM - 3:00 PM">Saturday: 9:00 AM - 3:00 PM</p>
+                            <p data-en="24/7 Emergency Service" data-es="Servicio de Emergencia 24/7">24/7 Emergency Service</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.119763973046!3d40.69766374874431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY!5e0!3m2!1sen!2sus!4v1234567890" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Electrician_life</h3>
+                    <p data-en="Professional electrical services in NYC with over 20 years of experience. Certified, licensed, and insured." data-es="Servicios eléctricos profesionales en NYC con más de 20 años de experiencia. Certificados, licenciados y asegurados.">
+                        Professional electrical services in NYC with over 20 years of experience. Certified, licensed, and insured.
+                    </p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4 data-en="Quick Links" data-es="Enlaces Rápidos">Quick Links</h4>
+                    <ul>
+                        <li><a href="#inicio" data-en="Home" data-es="Inicio">Home</a></li>
+                        <li><a href="#somos" data-en="About Us" data-es="Nosotros">About Us</a></li>
+                        <li><a href="#servicios" data-en="Services" data-es="Servicios">Services</a></li>
+                        <li><a href="#portafolio" data-en="Portfolio" data-es="Portafolio">Portfolio</a></li>
+                        <li><a href="#contacto" data-en="Contact" data-es="Contacto">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4 data-en="Services" data-es="Servicios">Services</h4>
+                    <ul>
+                        <li data-en="Residential Electrical" data-es="Eléctrico Residencial">Residential Electrical</li>
+                        <li data-en="Commercial Electrical" data-es="Eléctrico Comercial">Commercial Electrical</li>
+                        <li data-en="Emergency Repairs" data-es="Reparaciones de Emergencia">Emergency Repairs</li>
+                        <li data-en="LED Lighting" data-es="Iluminación LED">LED Lighting</li>
+                        <li data-en="EV Chargers" data-es="Cargadores EV">EV Chargers</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h4 data-en="Follow Us" data-es="Síguenos">Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/p/Electrician_life-100077712063685/" target="_blank" rel="noopener" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/electrician_life/" target="_blank" rel="noopener" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-policies">
+                    <a href="#privacy" class="policy-link" data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</a>
+                    <a href="#cookies" class="policy-link" data-en="Cookie Policy" data-es="Política de Cookies">Cookie Policy</a>
+                </div>
+                <p>
+                    &copy; <span id="current-year">2024</span> Electrician_life. 
+                    <span data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span>
+                </p>
+                <p class="author-credit">
+                    <span data-en="Developed by" data-es="Desarrollado por">Developed by</span> 
+                    <a href="https://christian-freelance.us/" target="_blank" rel="noopener">Christian Herencia</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Privacy Policy Modal -->
+    <div class="modal" id="privacy-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="privacy-close">&times;</button>
+            <h2 data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</h2>
+            <div class="modal-body">
+                <p data-en="At Electrician_life, we respect your privacy and are committed to protecting your personal information. This policy explains how we collect, use, and safeguard your data." data-es="En Electrician_life, respetamos su privacidad y estamos comprometidos a proteger su información personal. Esta política explica cómo recopilamos, usamos y salvaguardamos sus datos.">
+                    At Electrician_life, we respect your privacy and are committed to protecting your personal information. This policy explains how we collect, use, and safeguard your data.
+                </p>
+                <h3 data-en="Information We Collect" data-es="Información que Recopilamos">Information We Collect</h3>
+                <p data-en="We may collect personal information such as name, email address, phone number, and service requirements when you contact us." data-es="Podemos recopilar información personal como nombre, dirección de correo electrónico, número de teléfono y requisitos de servicio cuando nos contacta.">
+                    We may collect personal information such as name, email address, phone number, and service requirements when you contact us.
+                </p>
+                <h3 data-en="How We Use Your Information" data-es="Cómo Usamos su Información">How We Use Your Information</h3>
+                <p data-en="Your information is used to provide services, respond to inquiries, and send relevant communications. We do not sell or share your data with third parties." data-es="Su información se usa para proporcionar servicios, responder a consultas y enviar comunicaciones relevantes. No vendemos ni compartemos sus datos con terceros.">
+                    Your information is used to provide services, respond to inquiries, and send relevant communications. We do not sell or share your data with third parties.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie Policy Modal -->
+    <div class="modal" id="cookies-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="cookies-close">&times;</button>
+            <h2 data-en="Cookie Policy" data-es="Política de Cookies">Cookie Policy</h2>
+            <div class="modal-body">
+                <p data-en="This website uses cookies to enhance your browsing experience and analyze site traffic. By using our website, you consent to our use of cookies." data-es="Este sitio web utiliza cookies para mejorar su experiencia de navegación y analizar el tráfico del sitio. Al usar nuestro sitio web, usted consiente el uso de cookies.">
+                    This website uses cookies to enhance your browsing experience and analyze site traffic. By using our website, you consent to our use of cookies.
+                </p>
+                <h3 data-en="Types of Cookies We Use" data-es="Tipos de Cookies que Usamos">Types of Cookies We Use</h3>
+                <p data-en="We use essential cookies for site functionality and analytics cookies to understand how visitors interact with our website. No personal data is stored in these cookies." data-es="Usamos cookies esenciales para la funcionalidad del sitio y cookies de análisis para entender cómo los visitantes interactúan con nuestro sitio web. No se almacenan datos personales en estas cookies.">
+                    We use essential cookies for site functionality and analytics cookies to understand how visitors interact with our website. No personal data is stored in these cookies.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/12125550123" class="whatsapp-btn" target="_blank" rel="noopener" aria-label="WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
